@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="time-tracking">
+    <!-- First column-->
+    <div class="col">
+      <div class="hero">
+        <div class="hero-info">
+          <img src="images/image-jeremy.png" alt="Hero-Image">
+          <small>Report for</small>
+          <h3>Jeremy Robson</h3>
+        </div>
+        <div class="hero-links">
+          <a href="#" id="daily"> Daily</a>
+          <a href="#" id="weekly">Weekly</a>
+          <a href="#" id="monthly">Monthly</a>
+        </div>
+      </div>
+    </div>
+    <!-- First column-->
+
+    <!-- Second column-->
+    <div class="col">
+      <div class="row">
+        <div class="works">
+          <div class="img-container">
+            <img src="images/icon-work.svg" alt="Work">
+          </div>
+          <div class="card">
+            <h4>Work</h4>
+            <img src="images/icon-ellipsis.svg" alt="" class="ellipsis">
+            <h2><span id="current-work">32</span>hrs</h2>
+            <small>Last Week -<span id="previous-work">36</span>hrs</small>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="exercise">
+          <div class="img-container">
+            <img src="images/icon-exercise.svg" alt="Exercise">
+          </div>
+          <div class="card">
+            <h4>Exercise</h4>
+            <img src="images/icon-ellipsis.svg" alt="" class="ellipsis">
+            <h2> <span id="current-exercise">4</span>hrs</h2>
+            <small>Last Week - <span id="previous-exercise">5</span>hrs </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second column-->
+
+    <!-- Third column-->
+    <div class="col">
+      <div class="row">
+        <div class="play">
+          <div class="img-container">
+            <img src="images/icon-play.svg" alt="Play">
+          </div>
+          <div class="card">
+            <h4>Play</h4>
+            <img src="images/icon-ellipsis.svg" alt="" class="ellipsis">
+            <h2><span id="current-play">10</span>hrs</h2>
+            <small>Last Week -<span id="previous-play">8</span>hrs </small>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="social">
+          <div class="img-container">
+            <img src="images/icon-social.svg" alt="Social">
+          </div>
+          <div class="card">
+            <h4>Social</h4>
+            <img src="images/icon-ellipsis.svg" alt="" class="ellipsis">
+            <h2><span id="current-social">5</span>hrs</h2>
+            <small>Last Week -<span id="previous-social">10</span>hrs </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Third column-->
+
+    <!-- fourth column-->
+    <div class="col">
+      <div class="row">
+        <div class="study">
+          <div class="img-container">
+            <img src="images/icon-study.svg" alt="Study">
+          </div>
+          <div class="card">
+            <h4>Study</h4>
+            <img src="images/icon-ellipsis.svg" alt="" class="ellipsis">
+            <h2><span id="current-study">4</span>hrs</h2>
+            <small>Last Week -<span id="previous-study">7</span>hrs </small>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="self-care">
+          <div class="img-container">
+            <img src="images/icon-self-care.svg" alt="Self Care">
+          </div>
+          <div class="card">
+            <h4>Self Care</h4>
+            <img src="images/icon-ellipsis.svg" alt="" class="ellipsis">
+            <h2><span id="current-self-care">2</span>hrs</h2>
+            <small>Last Week -<span id="previous-self-care">2</span>hrs </small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fourth column-->
+  </div>
+<script src="script.js"></script>
+</body>
+
+</html>
