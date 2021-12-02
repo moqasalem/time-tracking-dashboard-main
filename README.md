@@ -30,7 +30,7 @@ Users should be able to:
 - Desktop
 ![Desktop screenshot](screenshot/Desktop.JPG)
 - Mobile
-!Mobile screenshot](screenshot/mobile.JPG)
+![Mobile screenshot](screenshot/mobile.JPG)
 
 
 ### Links
