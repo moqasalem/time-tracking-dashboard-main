@@ -156,6 +156,9 @@ Daily.addEventListener('click', function () {
     current_self_care.textContent = self_care.timeframes.daily.current;
     previous_self_care.textContent = self_care.timeframes.daily.previous;
 
+    Daily.classList.add('active');
+    Weekly.classList.remove('active');
+    Monthly.classList.remove('active');
 })
 
 Weekly.addEventListener('click', function () {
@@ -179,6 +182,9 @@ Weekly.addEventListener('click', function () {
     current_self_care.textContent = self_care.timeframes.weekly.current;
     previous_self_care.textContent = self_care.timeframes.weekly.previous;
 
+    Weekly.classList.add('active');
+    Daily.classList.remove('active');
+    Monthly.classList.remove('active');
 })
 
 Monthly.addEventListener('click', function () {
@@ -202,4 +208,7 @@ Monthly.addEventListener('click', function () {
     current_self_care.textContent = self_care.timeframes.monthly.current;
     previous_self_care.textContent = self_care.timeframes.monthly.previous;
 
+    Monthly.classList.add('active');
+    Weekly.classList.remove('active');
+    Daily.classList.remove('active');
 })

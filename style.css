@@ -1,232 +1,285 @@
-@import url("https://fonts.google.com/specimen/Rubik");
-
-*{
-    box-sizing: border-box;
-    margin:0;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-body{
-    background-color: #0D1323;
-    color: white;
-    Font-size: 18px;
-    font-family: "Rubik";
-    margin: 0;
-
+body {
+  background-color: #0d1323;
+  color: white;
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  font-weight: 300;
 }
 
-.time-tracking{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 5rem;
-    gap: 1.5rem;
+.time-tracking {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 1.5rem;
 }
 
-img:not(.hero img,.card img){
-    transform: scale(0.5);
+img:not(.hero img, .card img) {
+  transform: scale(0.8);
 }
 
-.works,.play,.study,.exercise,.social,.self-care{
-    height: 210px;
-    width: 200px;
-    border-radius: 8px;
-
+.works,
+.play,
+.study,
+.exercise,
+.social,
+.self-care {
+  height: 210px;
+  width: 200px;
+  border-radius: 8px;
 }
 
 /* extra margin */
-.works,.play,.study{
-    margin-bottom: 1.5rem!important;
+.works,
+.play,
+.study {
+  margin-bottom: 1.5rem !important;
 }
 
-.exercise,.social,.self-care{
-    margin-top: 1.5rem!important;
+.exercise,
+.social,
+.self-care {
+  margin-top: 1.5rem !important;
 }
-.works img,.play img,.study img,.exercise img,.social img,.self-care img{
-    position: relative;
-    top: -15px;
-    right: -140px;
-
+.works img,
+.play img,
+.study img,
+.exercise img,
+.social img,
+.self-care img {
+  position: relative;
+  top: -6px;
+  right: -121px;
 }
 
-h4{
-    font-size: 18px;
-    font-weight: 500;
+h4 {
+  font-size: 18px;
+  font-weight: 500;
 }
 
-small{
-    font-size: 10px;
-    font-weight: 300;
+small {
+  font-size: 10px;
+  font-weight: 300;
 }
 
 /* img-container */
-.img-container{
-    width: 100%;
-    height: 17%;
+.img-container {
+  width: 100%;
+  height: 17%;
 }
 
 .works {
-    background-color:  hsl(15, 100%, 70%);
+  background-color: hsl(15, 100%, 70%);
 }
 
-.play{
-    background-color: hsl(195, 74%, 62%);
+.play {
+  background-color: hsl(195, 74%, 62%);
 }
 
-.study{
-    background-color: hsl(348, 100%, 68%);
+.study {
+  background-color: hsl(348, 100%, 68%);
 }
 
-.exercise{
-    background-color: hsl(145, 58%, 55%);
+.exercise {
+  background-color: hsl(145, 58%, 55%);
 }
 
-.social{
-    background-color: hsl(264, 64%, 52%);
+.social {
+  background-color: hsl(264, 64%, 52%);
 }
 
-.self-care .img-container{
-    background-color: hsl(43, 84%, 65%);
+.self-care .img-container {
+  background-color: hsl(43, 84%, 65%);
 }
 
 /* card*/
-.card{
-    height: 83%;
-    width: 100%;
-    background-color: #1D204B;
-    border-radius: 8px;
-    padding: 1.5rem;
-    cursor:pointer;
+.card {
+  height: 83%;
+  width: 100%;
+  background-color: #1d204b;
+  border-radius: 8px;
+  padding: 1.5rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
-.card h4{
-    margin-top: 0.8rem;
+.card h4 {
+  margin-top: 0.8rem;
+  font-weight: 400;
 }
 
-.card img{
-    top: -23px;
-    right: -140px;
-    cursor: pointer;
+.card img {
+  top: -23px;
+  right: -140px;
+  cursor: pointer;
 }
 
-.card small{
-    position: relative;
-    bottom: -10px;
+.card small {
+  position: relative;
+  bottom: -10px;
 }
 
-.card h2{
-    font-size: 2.5rem;
+.card .hours {
+  font-size: 2.5rem;
 }
-
 
 /*hero column*/
-.hero{
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 436px;
+  width: 200px;
+  margin: 0.5rem;
+  border-radius: 8px;
+}
+
+.hero img {
+  transform: scale(0.5);
+  position: relative;
+  /* top: -30px; */
+  left: -53px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.hero-info {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-text {
     display: flex;
     flex-direction: column;
-    height: 436px;
-    width: 200px;
+  }
+
+.hero-info small {
+  font-weight: 300;
+  margin-bottom: 5px;
+  color: #bab7b7;
+}
+.hero-links {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 20px;
+  gap: 1rem;
+}
+
+.hero-links a {
+  color: #505288;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero-links .active {
+  color: white;
+}
+
+.hero-info {
+  height: 70%;
+  border-radius: 8px;
+  background-color: #5746ea;
+}
+.hero-links {
+  background-color: #1d204b;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero .person_name {
+  /* font-size: 2rem; */
+  font-weight: 300;
+  font-size: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .time-tracking {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero {
+    height: 156px;
+    width: 300px;
     margin: 0.5rem;
     border-radius: 8px;
-}
+  }
+  .hero-info {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 36px;
+  }
 
-.hero img{
-    transform: scale(0.3);
-    position: relative;
-    top: -30px;
-    left: -53px;
-}
-
-.hero-info{
-    padding-left: 20px;
+  .hero-text {
     display: flex;
     flex-direction: column;
-}
-.hero-info small,.hero-info h3{
-    position: relative;
-    top: -57px;
-    left: 0px;
-}
-.hero-links{
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-}
+    align-items: start;
+  }
 
-.hero-links a{
-    color:white;
-    text-decoration: none;
-    font-size: 1rem;
-    cursor: pointer;
-}
+  .hero img {
+    transform: scale(0.2);
+    top: 0;
+    left: 0;
+  }
 
-.hero-info{
-    height: 70%;
+  .hero-info small {
+    top: -23px;
+    left: -73px;
+    transform: translate(-74px, 0);
+
+  }
+
+  .hero-info h3 {
+    top: 11px;
+    left: -102px;
+    font-size: 1.2rem;
+  }
+  .hero-links {
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-top: 5px;
+
+  }
+
+  .hero .person_name{
+    transform: translate(-74px, 0);
+  }
+
+  .works,
+  .play,
+  .study,
+  .exercise,
+  .social,
+  .self-care {
+    height: 210px;
+    width: 300px;
     border-radius: 8px;
-    background-color: #5746EA;
+  }
+
+  .works img,
+  .play img,
+  .study img,
+  .exercise img,
+  .social img,
+  .self-care img {
+    position: relative;
+    right: -238px;
+  }
 }
-.hero-links{
-    background-color: #1D204B;
-    height: 30%;
-    display: flex;
-    flex-direction: column;
-}
 
-.hero h3{
-    font-size: 2rem;
-}
-
-@media screen and (max-width:768px) {
-    .time-tracking{
-        flex-direction: column;
-        align-items: center;
-    }
-    .hero{
-        height: 156px;
-        width: 300px;
-        margin: 0.5rem;
-        border-radius: 8px;
-    }
-    .hero-info{
-        display: flex;
-        flex-direction: row;
-        height: 50%;
-        justify-content:space-around;
-        align-items: center;
-
-    }
-
-    .hero img{
-       
-        top: 0;
-        left: 0;
-    }
-
-    .hero-info small{
-        top: -23px;
-        left: -73px;
-    }
-
-    .hero-info h3{
-        top: 11px;
-        left: -102px;
-        font-size: 1.2rem;
-    }
-    .hero-links{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .works,.play,.study,.exercise,.social,.self-care{
-        height: 210px;
-        width: 300px;
-        border-radius: 8px;
-       
-    }
-
-    .works img,.play img,.study img,.exercise img,.social img,.self-care img{
-        position: relative;
-        right: -238px;
-    }
-}
